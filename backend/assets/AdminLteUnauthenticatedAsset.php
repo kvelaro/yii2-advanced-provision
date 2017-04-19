@@ -16,7 +16,7 @@ class AdminLteUnauthenticatedAsset extends AssetBundle
         'plugins/iCheck/square/blue.css'
     ];
     public $js = [
-        'plugins/jQuery/jquery-2.2.3.min.js',
+//        'plugins/jQuery/jquery-2.2.3.min.js',
         'bootstrap/js/bootstrap.min.js',
         'plugins/iCheck/icheck.min.js'
     ];
