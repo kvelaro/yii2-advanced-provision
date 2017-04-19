@@ -42,8 +42,8 @@ $this->title = 'login';
             <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-google-plus"></i> Sign in using Google+</a>
         </div>
         <!-- /.social-auth-links -->
-        <a href="#">I forgot my password</a><br>
-        <a href="register.html" class="text-center">Register a new membership</a>
+        <a href="<?= Yii::$app->urlManager->createUrl('/auth/forget');?>">I forgot my password</a><br>
+        <a href="<?= Yii::$app->urlManager->createUrl('/auth/register');?>" class="text-center">Register a new membership</a>
     </div>
     <!-- /.login-box-body -->
 </div>
