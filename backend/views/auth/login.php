@@ -17,12 +17,11 @@ $this->title = 'login';
         <p class="login-box-msg">Sign in to start your session</p>
         <?php $form = ActiveForm::begin(['id' => 'login-form', 'method' => 'post']); ?>
             <div class="form-group has-feedback">
-                <?= $form->field($model, 'username')->textInput(['autofocus' => true, 'placeholder' => 'Username']) ?>
-                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                <?= $form->field($model, 'username', ['template' => '{input}<span class="glyphicon glyphicon-user form-control-feedback"></span>{error}'])->textInput(['autofocus' => true, 'placeholder' => 'Username']) ?>
             </div>
             <div class="form-group has-feedback">
-                <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'Password']) ?>
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                <?= $form->field($model, 'password', ['template' => '{input}<span class="glyphicon glyphicon-lock form-control-feedback"></span>{error}'])->passwordInput(['placeholder' => 'Password']) ?>
+
             </div>
             <div class="row">
                 <div class="col-xs-8">
