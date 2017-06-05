@@ -44,6 +44,6 @@ return [
             ],
         ],
     ],
+    'layout' => 'adminlte',
     'params' => $params,
-    'defaultRoute' => 'auth/login'
 ];
